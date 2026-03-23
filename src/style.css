@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-
+:root {
+  --shadow-color: #c0c0c0;
+  --inset-shadow-color: #dcdcdc;
+}
 html {
   font-size: 40px;
 }
@@ -20,10 +23,20 @@ body {
   width: 100%;
   max-width: 1152px;
   box-shadow:
-    inset 0px -4px 8px #dcdcdc,
-    0px 4px 16px #c0c0c0;
+    inset 0px -4px 8px var(--inset-shadow-color),
+    0px 4px 16px var(--shadow-color);
   border-radius: 16px;
   background-color: white;
+}
+
+#socials {
+  width: 750px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  img {
+    width: 100%;
+  }
 }
 
 #app-links {
@@ -36,12 +49,12 @@ body {
 .app-link {
   div {
     box-shadow:
-      inset 0px -4px 8px #dcdcdc,
-      0px 4px 16px #c0c0c0;
+      inset 0px -4px 8px var(--inset-shadow-color),
+      0px 4px 16px var(--shadow-color);
     border-radius: 64px;
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
     padding: 32px;
   }
   img {
